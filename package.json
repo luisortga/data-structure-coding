@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "name": "data-structure-coding",
+  "version": "1.0.0",
+  "dependencies": {
+    "@datastructures-js/priority-queue": "^6.3.5"
+  }
+}
