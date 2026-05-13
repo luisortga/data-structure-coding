@@ -2,14 +2,15 @@
 > ### Practicando con codigo js, ts y python
 
 ### Listado de las estructura de datos
-- Arrays
+- 1.- Arrays
     - arreglos
-- Linked list
-- Stack
+- 2.- Linked list
+- 3.- Stack
     - pilas
     - solucio al error stack over flow
-- Queue
+- 4.- Queue
     - colas
-- Hash table
+- 5.- Hash table
     - uso de Maps
-- Binary Search Tree
+- 6.- Binary Search Tree
+- 7.- Heap
