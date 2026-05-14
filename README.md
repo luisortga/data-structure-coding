@@ -1,3 +1,5 @@
+![image alt](https://crehana-blog.imgix.net/media/filer_public/00/89/00898af6-23c0-4f70-9239-5422b4158238/estructura-de-datos.jpg)
+
 # Ejemplos de estructura de datos
 > ### Practicando con codigo js, ts y python
 
@@ -14,3 +16,10 @@
     - uso de Maps
 - 6.- Binary Search Tree
 - 7.- Heap
+
+## Instalación de dependencias
+
+1. Para los codigos de heap:
+   ```bash
+   npm install @datastructures-js/priority-queue
+   ```
