@@ -1,7 +1,7 @@
 ![image alt](https://crehana-blog.imgix.net/media/filer_public/00/89/00898af6-23c0-4f70-9239-5422b4158238/estructura-de-datos.jpg)
 
 # Ejemplos de estructura de datos
-> ### Practicando con codigo js, ts y python
+> ### Con codigo js, ts y python
 
 ### Listado de las estructura de datos
 - 1.- Arrays
