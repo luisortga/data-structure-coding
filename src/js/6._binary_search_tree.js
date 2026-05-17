@@ -38,11 +38,11 @@ class Arbol {
 const arbol = new Arbol();
 
 // insertar valores de numeros
-arbolBinario.insertar(50);
-arbolBinario.insertar(30);
-arbolBinario.insertar(70);
-arbolBinario.insertar(20);
-arbolBinario.insertar(40);
-arbolBinario.insertar(60);
-arbolBinario.insertar(80);
-console.log(arbolBinario);
+arbol.insertar(50);
+arbol.insertar(30);
+arbol.insertar(70);
+arbol.insertar(20);
+arbol.insertar(40);
+arbol.insertar(60);
+arbol.insertar(80);
+console.log(arbol);
