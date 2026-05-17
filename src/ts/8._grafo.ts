@@ -22,4 +22,8 @@ class Grafo {
             this.adyacencia[destino].push(origen)
         }
     }
+
+    vecinos(nodo: string) : object {
+       return this.adyacencia[nodo] = []
+    }
 }
