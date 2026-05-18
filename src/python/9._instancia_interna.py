@@ -14,7 +14,7 @@ class Coche:
         self.parked = True
         print(f' 🐸 {self.brand} se ha estacionado.')
 
-        print('Coches estacionados')        
+        print('Coches estacionados')
 
     def show_parking(self) :
         self.info()
