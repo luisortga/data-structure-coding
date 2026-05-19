@@ -24,7 +24,7 @@ class Fixed:
             raise ValueError('Divisor error zero')
         else:
             print('Ejecucion terminada con exito.\n')
-    
+ 
 
 # main:
 if __name__ == "__main__":
