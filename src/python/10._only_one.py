@@ -19,6 +19,12 @@ class Fixed:
         Fixed.count += 1
         return Fixed.count
     
+    def inesperado(self, declaracion: str) -> None:
+        if (declaracion in 'Error'):
+            raise ValueError('Divisor error zero')
+        else:
+            print('Ejecucion terminada con exito.\n')
+    
 
 # main:
 if __name__ == "__main__":
@@ -28,3 +34,7 @@ if __name__ == "__main__":
     Fixed.contador() # 2
     Fixed.contador() # 3
     print(Fixed.contador()) # 4
+
+    # Object
+    carpeta = Fixed()
+    carpeta.inesperado('Correcto')
