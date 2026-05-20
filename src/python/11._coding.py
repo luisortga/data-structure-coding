@@ -39,7 +39,20 @@ class Running(Ortogonalidad):
     def counter() -> int:
         Running.count += 1
         return Running.count
-    
+
+    @classmethod
+    def reboot(cls) -> None:
+        print('Reinicio del metodo abstracto')
+
+    def query(self) -> None:
+        print('Consulta a la base de datos')
+
+    def recovery(self) -> None:
+        print('Recuperación del metodo abstracto')
+
+    def shutdown(self) -> None:
+        print('Apagar el metodo abstracto')
+
     @property
     def conteiner(self) -> str:
         return self.__conteiner
@@ -48,26 +61,18 @@ class Running(Ortogonalidad):
     def conteiner(self, conteiner: str) -> None:
         self.__conteiner = conteiner
 
-    @abstractmethod
-    def query(cls) -> None:
-        pass
-
-    @classmethod
-    def reboot(cls) -> None:
-        print('Reinicio del metodo abstracto')
-
-    @abstractmethod
-    def recovery(cls) -> None:
-        print('Recuperación del metodo abstracto')
-
-    @abstractmethod
-    def shutdown(cls) -> None:
-        print('Apagar el metodo abstracto')
-
 # <-- main -->
 if __name__ == "__main__":
 
-    Running.counter()
-    print(Running.counter())
+    # static
+    Running.counter() # 1
+    Running.counter() # 2
+    Running.counter() # 3
+    Running.counter() # 4
+    print(Running.counter()) # 5
 
     # Object
+    run = Running()
+    run.reboot()
+    run.recovery()
+    print(run.conteiner)
