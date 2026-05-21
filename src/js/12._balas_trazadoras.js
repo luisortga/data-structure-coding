@@ -4,6 +4,10 @@ class Trazo {
 
     /** @type {string} */
     #trace = ""
+    way = ""
+    map = ""
+    count = 0
+
 
     constructor(way, map, count) {
         /** @type {string} */
@@ -12,6 +16,14 @@ class Trazo {
         this.map = map
         /** @type {number} */
         this.count = count
+    }
+
+    compuesto(rule) {
+        let demo = this.way
+        rule = ""
+        if (rule === '16') {
+            
+        }
     }
 
 
