@@ -1,5 +1,5 @@
 # start
-from abc import ABC, abstractmethod
+from abc import ABC
 from root import Pragmatic
 
 class Ortogonalidad(Pragmatic, ABC):
@@ -7,24 +7,20 @@ class Ortogonalidad(Pragmatic, ABC):
     def __init__(self) -> None:
         print('Aplicar los consejos de Ortogonalidad')
 
-    @abstractmethod
-    def query(cls) -> None:
+    def query(self) -> None:
         pass
 
     @staticmethod
     def build(count: int) -> int:
-        return 0
+        return count+16
 
-    @classmethod
-    def reboot(cls) -> None:
+    def reboot(self) -> None:
         print('Reinicio del metodo abstracto')
 
-    @abstractmethod
-    def recovery(cls) -> None:
+    def recovery(self) -> None:
         print('Recuperación del metodo abstracto')
 
-    @abstractmethod
-    def shutdown(cls) -> None:
+    def shutdown(self) -> None:
         print('Apagar el metodo abstracto')
 
 class Running(Ortogonalidad):
@@ -40,8 +36,7 @@ class Running(Ortogonalidad):
         Running.count += 1
         return Running.count
 
-    @classmethod
-    def reboot(cls) -> None:
+    def reboot(self) -> None:
         print('Reinicio del metodo abstracto')
 
     def query(self) -> None:

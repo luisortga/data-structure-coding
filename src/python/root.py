@@ -2,15 +2,14 @@ from abc import ABC, abstractmethod
 
 class Pragmatic(ABC):
 
-    @classmethod
     @abstractmethod
-    def reboot(cls) -> None:
+    def reboot(self) -> None:
         pass
 
     @abstractmethod
-    def recovery(cls) -> None:
+    def recovery(self) -> None:
         pass
 
     @abstractmethod
-    def shutdown(cls) -> None:
+    def shutdown(self) -> None:
         pass
