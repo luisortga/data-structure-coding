@@ -39,7 +39,35 @@ async function corredor() {
 
 
     console.log('start in BASH.')
-    await threadthree()
+    threadthree()
 }
 
 corredor()
+
+let acount: number = -24
+
+const service = (ms: number) => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(() => {
+                let num = dato
+                
+                if (num < 0) {
+                    num -= (num*2)
+                    console.log(`Solucion del numero ${num}.`)
+                } else {
+                    console.log(`El numero introducido es ${num}.`)
+                }
+            })
+        }, ms)
+    } )
+}
+
+async function deploy() {
+
+    const response = await service(6000)
+    response
+    //
+} 
+
+deploy()
