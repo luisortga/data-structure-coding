@@ -24,3 +24,22 @@ function segundo() {
         }, 1000)
     })
 }
+
+firtss().then(segundo).then(() => {
+    console.log('Se resolvieron todos los threads')
+})
+
+function threadthree() {
+    setTimeout(() => {
+        console.log('ADM Ryzen')
+    },3000)
+}
+
+async function corredor() {
+
+
+    console.log('start in BASH.')
+    await threadthree()
+}
+
+corredor()
