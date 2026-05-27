@@ -1,25 +1,175 @@
 ![image alt](https://crehana-blog.imgix.net/media/filer_public/00/89/00898af6-23c0-4f70-9239-5422b4158238/estructura-de-datos.jpg)
+````markdown
+# 📚 Data Structures Repository
 
-# Ejemplos de estructura de datos
-> ### Con codigo js, ts y python
+Repositorio educativo con implementaciones de estructuras de datos y algoritmos fundamentales en:
 
-### Listado de las estructura de datos
-- 1.- Arrays
-    - arreglos
-- 2.- Linked list
-- 3.- Stack
-    - pilas
-    - solucio al error stack over flow
-- 4.- Queue
-    - colas
-- 5.- Hash table
-    - uso de Maps
-- 6.- Binary Search Tree
-- 7.- Heap
+- JavaScript
+- TypeScript
+- Python
 
-## Instalación de dependencias
+Incluye ejemplos prácticos y explicaciones básicas para aprender cómo funcionan internamente las estructuras de datos más utilizadas.
 
-1. Para los codigos de heap:
-   ```bash
-   npm install @datastructures-js/priority-queue
-   ```
+---
+
+# 🚀 Contenido
+
+## 📦 Estructuras Implementadas
+
+- Arrays
+- Linked List
+- Stack
+- Queue
+- Hash Table
+- Graphs
+- Priority Queue
+
+---
+
+# 🛠️ Tecnologías
+
+## Lenguajes
+
+- JavaScript
+- TypeScript
+- Python
+
+## Dependencias
+
+La única dependencia utilizada es:
+
+```bash
+priorityqueue
+````
+
+---
+
+# 📁 Estructura del Proyecto
+
+```bash
+data-structures/
+│
+├── javascript/
+│   ├── arrays/
+│   ├── linked-list/
+│   ├── stacks/
+│   ├── queue/
+│   ├── hash-table/
+│   └── graphs/
+│
+├── typescript/
+│   ├── arrays/
+│   ├── linked-list/
+│   ├── stacks/
+│   ├── queue/
+│   ├── hash-table/
+│   └── graphs/
+│
+├── python/
+│   ├── arrays/
+│   ├── linked-list/
+│   ├── stacks/
+│   ├── queue/
+│   ├── hash-table/
+│   └── graphs/
+│
+└── README.md
+```
+
+---
+
+# ⚙️ Instalación
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/luisortga/data-structure-coding.git
+```
+
+Entra al proyecto:
+
+```bash
+cd data-structures
+```
+
+Instala las dependencias:
+
+```bash
+npm install @datastructures-js/priority-queue
+```
+
+---
+
+# ▶️ Ejecución
+
+## JavaScript
+
+```bash
+node archivo.js
+```
+
+## TypeScript
+
+```bash
+ts-node archivo.ts
+```
+
+o compilar:
+
+```bash
+tsc
+node archivo.js
+```
+
+## Python
+
+```bash
+python archivo.py
+```
+
+---
+
+# 🧠 Objetivo del Proyecto
+
+Este repositorio fue creado con fines educativos para:
+
+* Aprender estructuras de datos
+* Practicar lógica de programación
+* Comparar implementaciones entre lenguajes
+* Mejorar habilidades de programación
+
+---
+
+# 📚 Temas Aprendidos
+
+* Complejidad temporal Big O
+* Estructuras lineales y no lineales
+* Manejo de memoria
+* Recursividad
+* Algoritmos de recorrido
+* Organización de datos
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas.
+
+Puedes:
+
+* Mejorar implementaciones
+* Agregar algoritmos
+* Optimizar código
+* Corregir errores
+
+Haz un fork y crea un pull request 🚀
+
+---
+
+# ⭐ Autor
+
+Desarrollado por luis Ortega.
+
+```
+```
+
