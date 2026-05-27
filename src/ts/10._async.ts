@@ -14,7 +14,7 @@ let pay: boolean = true
 function segundo() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (isPay) {
+            if (pay) {
                 console.log('Segundo thread termino y realizo el pago.')
                 resolve
             } else {
@@ -50,7 +50,7 @@ const service = (ms: number) => {
     return new Promise(resolve => {
         setTimeout(() => {
             resolve(() => {
-                let num = dato
+                let num = acount
                 
                 if (num < 0) {
                     num -= (num*2)
