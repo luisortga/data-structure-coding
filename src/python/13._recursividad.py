@@ -6,4 +6,7 @@ text = "Los frenos se cristalizaron, corres la final mañana de la cademia GT, G
 pattern: str = r'cristalizaron'
 find = re.search(pattern, text)
 
-print(find.group())
+if find:
+    print(find.group())
+else:
+    print('resultado None')
