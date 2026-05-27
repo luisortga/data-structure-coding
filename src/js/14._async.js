@@ -1,7 +1,5 @@
 // Syncronía
 
-const { resolve } = require("node:dns")
-
 const firts = () => {
     return new Promise(resolve => {
         setTimeout(() => {
