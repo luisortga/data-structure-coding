@@ -20,7 +20,7 @@ def reproducir_musica() -> None:
         time.sleep(4)
         print(f'Se reproduce la cancion {i+1}')
 
-thread_billy = threading.Thread(target=inflar_globos)
+thread_billy = threading.Thread(target=inflar_globos, args=(), daemon=(True)) # equals all threads
 thread_mandy = threading.Thread(target=hornear_pie)
 thread_musica = threading.Thread(target=reproducir_musica)
 
