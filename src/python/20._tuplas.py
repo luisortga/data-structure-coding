@@ -60,6 +60,6 @@ def group_contries(*args: str) -> list[str]:
     return list_contries
 
 grupo_a = group_contries('germany', 'italy', 'spain')
-grupo_b = group_contries('denmark', 'finland', 'iceland', 'norway', 'sweden')
+grupo_nordic = group_contries('denmark', 'finland', 'iceland', 'norway', 'sweden')
 print(grupo_a)
-print(grupo_b)
+print(grupo_nordic)
