@@ -1,7 +1,7 @@
 # Examples of claude: List Comprehesion
 
 # Solo números pares del 1 al 20
-pares = [x for x in range(1, 21) if x % 2 == 0]
+pares = [x for x in range(1, 21) if x % 2 == 0] # filter
 # [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 # Elevar al cuadrado solo los impares
