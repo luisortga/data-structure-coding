@@ -4,9 +4,9 @@ const bladeRunner = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve({
-                runner: "KD6-3.7",
-                emanador: "Ana de armas",
-                sobreviviente: "Harryson Ford"
+                runner: "agent KD6-3.7",
+                emanador: "Joi",
+                sobreviviente: "Rick Dechard"
             })
         }, 4000)
     })
