@@ -13,6 +13,7 @@ const bladeRunner = (): Promise<BladeRunner> => {
                 emanador: "Joi",
                 sobreviviente: "Rick Dechard"
             });
+            reject('declined service')
         }, 4000);
     });
 };
