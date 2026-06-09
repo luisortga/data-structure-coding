@@ -5,4 +5,7 @@ def mul(a: int, b: int) -> int:
     """
     return a*b
 
-print(mul(12, 24))
+
+if __name__ == '__main__':
+
+    print(mul(12, 24))
