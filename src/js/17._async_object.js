@@ -22,6 +22,8 @@ async function runnable() {
     secondScene.replicantes = "WALLACE"
     console.log(secondScene.runner)
 
+    let thredScene = await bladeRunner()
+
     } catch (error) {
         console.error(error)
     }
