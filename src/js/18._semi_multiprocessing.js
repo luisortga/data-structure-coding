@@ -22,7 +22,7 @@ const threading = async () => {
 
         console.log('start...')
         let ps5 = await control()
-        print(ps5)
+        console.log(ps5)
 
     } catch (error) {
         console.error(error)
