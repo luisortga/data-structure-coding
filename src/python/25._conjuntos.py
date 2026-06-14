@@ -1,6 +1,6 @@
 # Conjuntos
 # no se puede repetir (hash)
-# Set, 
+# Set
 
 def starts_structure() -> None:
     conjunto = set([1, 2])
@@ -77,3 +77,18 @@ def conjuntos() -> None:
 
 # contrac()
 conjuntos()
+
+reflogs = {
+    'saleen': 's7',
+    'porsche': '718 spyder',
+    'mclaren': 'w1'
+}
+
+
+def shifu(**kwargs: dict[str, str]) -> None:
+    for k, v in kwargs.items():
+        
+        print(f'key: {k} and value {v}')
+
+
+shifu(**reflogs) # type: ignore
