@@ -22,7 +22,11 @@ def starts_structure() -> None:
     print(conjunto_2 ^ conjunto) # diferencia simétrica
     print(conjunto_2 | conjunto) # union
     print(conjunto_2 >= conjunto) # superconjunto
-    print(conjunto_2 <= conjunto) # subconjunto    
+    print(conjunto_2 <= conjunto) # subconjunto
+    
+    # crearlo e inicializarlos
+    electric: set[str | int] = {'tesla', 'rivian', 'rimac', 24}
+    print(electric)
 
 
 def contrac() -> None:
