@@ -94,6 +94,3 @@ def shifu(**kwargs: dict[str, str]) -> None:
 shifu(**reflogs) # type: ignore
 
 # open close
-
-def catch(*args: list[int]):
-    pass
