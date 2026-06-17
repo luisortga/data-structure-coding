@@ -94,3 +94,5 @@ def shifu(**kwargs: dict[str, str]) -> None:
 shifu(**reflogs) # type: ignore
 
 # open close
+
+MAX_CANTIDAD: int = 10_000_000
