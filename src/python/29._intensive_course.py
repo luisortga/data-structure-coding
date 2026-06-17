@@ -31,6 +31,6 @@ match day_week: # type: ignore
     case 6:
         day = 'domingo'
     case _:
-        day = 'final'
+        day = 'final' 
         
 print(f'El dia es: {day}')
