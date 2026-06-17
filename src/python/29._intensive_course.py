@@ -8,3 +8,9 @@ phrase: str = 'Ahora me he convertido en la Muerte, el destructor de mundos'
 author: str = 'J. Robert Oppenheimer'
 
 print(f'{author} : >> {phrase}')
+
+day: str = 'lunes'
+
+match day:
+    case 'lunes':
+        print('')
