@@ -76,4 +76,16 @@ print(len(autos))
 
 see_world = ['tokio', 'new york', 'toronto', 'inglaterra', 'noruega', 'alemania']
 print(see_world)
+print(sorted(see_world)) # ver lista ordenada
 
+print(see_world)
+
+print(sorted(see_world, reverse=True)) # ver lista en orden inverso
+
+print(see_world)
+
+see_world.sort()
+print(see_world)
+see_world.sort(reverse=True)
+
+print(see_world)
