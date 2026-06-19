@@ -73,3 +73,7 @@ autos.sort(reverse=True) # ordenamiento inverso de la lista
 print(autos)
 
 print(len(autos))
+
+see_world = ['tokio', 'new york', 'toronto', 'inglaterra', 'noruega', 'alemania']
+print(see_world)
+
