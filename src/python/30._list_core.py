@@ -89,3 +89,7 @@ print(see_world)
 see_world.sort(reverse=True)
 
 print(see_world)
+
+magos = ['luis', 'angel', 'daniel']
+for mago in magos:
+    print(f'{mago}: great trick of magic')
