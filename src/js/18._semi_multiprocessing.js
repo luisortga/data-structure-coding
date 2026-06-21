@@ -1,4 +1,4 @@
-//
+// promise, async await
 
 const control = () => {
 
