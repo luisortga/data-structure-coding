@@ -24,6 +24,8 @@ const threading = async () => {
         let ps5 = await control()
         console.log(ps5)
 
+        let series_x = await control()
+
     } catch (error) {
         console.error(error)
     }
