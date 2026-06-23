@@ -34,3 +34,11 @@ class Hijo(Padre):
 h = Hijo()
 h.procesar()
 # Salida: Nombre: Juan, Edad: 35
+
+def description_pet(type_pet: str, name_pet: str) -> None:
+    """ View information of pet """
+    print(f'Tengo un {type_pet}')
+    print(f'EL nombre de mi {type_pet} es {type(name_pet), name_pet}')
+    
+description_pet('rooster', 'Alfredo')
+description_pet(name_pet="Sheldon", type_pet="turtle")
