@@ -7,3 +7,8 @@ elif numero == 24:
     print('kobe bryant')
 else:
     print(f'El numero {numero} es inpar')
+    
+
+# new usuarios confirmados
+
+users_no_confirmados = []
