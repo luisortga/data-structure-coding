@@ -40,5 +40,20 @@ def description_pet(type_pet: str, name_pet: str) -> None:
     print(f'Tengo un {type_pet}')
     print(f'EL nombre de mi {type_pet} es {type(name_pet), name_pet}')
     
-description_pet('rooster', 'Alfredo')
-description_pet(name_pet="Sheldon", type_pet="turtle")
+# description_pet('rooster', 'Alfredo')
+# description_pet(name_pet="Sheldon", type_pet="turtle")
+
+def description_pet_with_default(name_pet: str, type_pet: str ="perro") -> None:
+    """ View information of pet """
+    print(f'Tengo un {type_pet}')
+    print(f'EL nombre de mi {type_pet} es {type(name_pet), name_pet}')
+    
+# description_pet_with_default('Ragnark')
+
+def one_for_more(begin: str) -> list[str]:
+    more: list[str] = []
+    for _ in range(0, 11):
+        more.append(begin)
+    return more
+
+print(one_for_more('helado'))
