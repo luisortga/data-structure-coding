@@ -11,4 +11,12 @@ else:
 
 # new usuarios confirmados
 
-users_no_confirmados = []
+users_no_confirmados = ['luis', 'angel', 'daniel']
+users_confirmados = []
+
+while users_no_confirmados:
+    current_user = users_no_confirmados.pop
+    
+    
+    print(f'verificando usuario: {current_user}')
+    users_confirmados.append(current_user) # type: ignore
