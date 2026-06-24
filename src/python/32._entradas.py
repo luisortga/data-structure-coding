@@ -7,7 +7,7 @@ elif numero == 24:
     print('kobe bryant')
 else:
     print(f'El numero {numero} es inpar')
-    
+
 
 # new usuarios confirmados
 
@@ -71,3 +71,6 @@ def perfil_builder(first: str, last: str, **kwargs: str) -> dict[str, str]:
     return kwargs
 
 print(perfil_builder('albert', 'einstein', ubicacion="prinston", campo="fisica"))
+
+names: list[str] = ['core', 'draw', 'twich']
+print()
