@@ -57,3 +57,17 @@ def one_for_more(begin: str) -> list[str]:
     return more
 
 print(one_for_more('helado'))
+
+def pizza_ingre(*args): # type: ignore
+    print(args) # type: ignore muestra una tupla
+
+pizza_ingre('carne', 'peperoni', 'masa', 'queso')
+
+def perfil_builder(first: str, last: str, **kwargs: str) -> dict[str, str]:
+    """ Construimos un diccionario que contenga todo lo que sabemos de un usuario. """
+    kwargs['nombre'] = first
+    kwargs['apellido'] = last
+    
+    return kwargs
+
+print(perfil_builder('albert', 'einstein', ubicacion="prinston", campo="fisica"))
