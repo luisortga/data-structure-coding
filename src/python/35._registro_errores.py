@@ -21,7 +21,7 @@ def registrar_user(name: str, age: int) -> str:
 
 if __name__ == "__main__":
     
-    path = Path("excepciones/registros.txt")
+    path = Path("python/registros.txt")
     try:
         with path.open("a", encoding="utf-8") as archivo:
             archivo.write(registrar_user("joseph", 12))
