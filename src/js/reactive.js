@@ -17,7 +17,7 @@ const cold$ = new Observable((observer) => {
   observer.next(Math.round(Math.random() * 10))
 })
 
-cold.subscribe((res) => {
+cold$.subscribe((res) => {
   console.log(res)
 })
 
@@ -25,11 +25,11 @@ cold.subscribe((res) => {
 
 const hot$ = new Subject()
 
-hot$.subscribe(() => {
+hot$.subscribe((res) => {
   console.log(res)
 })
 
-hot$.subscribe(() => {
+hot$.subscribe((res) => {
   console.log(res)
 })
 
