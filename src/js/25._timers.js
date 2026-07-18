@@ -1,6 +1,4 @@
-// ============================================
 // EJEMPLOS: setInterval y setImmediate en Node.js
-// ============================================
 
 console.log('=== EJEMPLO 1: setInterval ===')
 console.log('setInterval ejecuta código cada X milisegundos\n')
@@ -139,22 +137,3 @@ setTimeout(() => {
     })
   })
 }, 34000)
-
-// ============================================
-
-setTimeout(() => {
-  console.log('=== RESUMEN ===\n')
-  console.log('setInterval:')
-  console.log('  • Ejecuta código repetidamente cada X ms')
-  console.log('  • Usa clearInterval() para detener')
-  console.log('  • Útil para: polls, timers, animaciones\n')
-
-  console.log('setImmediate:')
-  console.log('  • Ejecuta después de operaciones I/O')
-  console.log('  • Se ejecuta en la siguiente fase del event loop')
-  console.log('  • Útil para: procesar datos después de I/O\n')
-
-  console.log('setTimeout:')
-  console.log('  • Ejecuta después de X milisegundos')
-  console.log('  • setTimeout(fn, 0) ≠ setImmediate(fn)\n')
-}, 40000)
