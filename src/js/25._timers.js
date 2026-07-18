@@ -67,11 +67,11 @@ setTimeout(() => {
 
   const reloj = setInterval(() => {
     segundos++
-    console.log(`⏱️  Tiempo: ${segundos}s`)
+    console.log(`Tiempo: ${segundos}s`)
 
     if (segundos === maxSegundos) {
       clearInterval(reloj)
-      console.log(`✅ ¡Llegamos a ${maxSegundos} segundos!\n`)
+      console.log(`¡Llegamos a ${maxSegundos} and ${segundos} segundos!\n`)
     }
   }, 1000)
 }, 16000)
@@ -108,7 +108,7 @@ setTimeout(() => {
     // Detenemos después del 4to click
     if (click === 4) {
       clearInterval(simuladorClicks)
-      console.log('❌ Intervalo cancelado - máximo de clicks alcanzado\n')
+      console.log('Intervalo cancelado - máximo de clicks alcanzado\n')
     }
   }, 500)
 }, 28000)
