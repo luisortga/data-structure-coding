@@ -56,9 +56,7 @@ const resultado2 = numeros
 console.log('Resultado:', resultado2)
 console.log('')
 
-// ============================================
 // 3. EJEMPLO PRÁCTICO: PROCESAMIENTO DE USUARIOS
-// ============================================
 
 console.log('--- 3. EJEMPLO: PROCESAMIENTO DE USUARIOS ---\n')
 
@@ -90,9 +88,7 @@ const madrilenos = usuarios
 console.log('Resultado:', madrilenos)
 console.log('')
 
-// ============================================
 // 4. PIPELINE PERSONALIZADO (PARECIDO A RxJS)
-// ============================================
 
 console.log('--- 4. PIPELINE PERSONALIZADO ---\n')
 
@@ -133,9 +129,7 @@ const resultado4 = new DataPipeline([1, 2, 3, 4, 5])
 console.log('Resultado:', resultado4.resultado())
 console.log('')
 
-// ============================================
 // 5. TRABAJAR CON OBJETOS COMPLEJOS
-// ============================================
 
 console.log('--- 5. OBJETOS COMPLEJOS ---\n')
 
@@ -186,9 +180,7 @@ console.log('\nPedidos > $500:')
 console.log(pedidosFiltrados)
 console.log('')
 
-// ============================================
 // 6. OPERADORES PERSONALIZADOS
-// ============================================
 
 console.log('--- 6. OPERADORES PERSONALIZADOS ---\n')
 
@@ -223,9 +215,7 @@ console.log('Promedio:', operadores.promedio(nums).toFixed(2))
 console.log('Al cuadrado:', operadores.alCuadrado(nums))
 console.log('')
 
-// ============================================
 // 7. PIPELINE ENCADENADO CON OPERADORES
-// ============================================
 
 console.log('--- 7. PIPELINE ENCADENADO ---\n')
 
@@ -252,9 +242,7 @@ const resultadoFinal = operadores.sumarTodos(
 console.log('Resultado:', resultadoFinal)
 console.log('')
 
-// ============================================
 // 8. REDUCE - EL OPERADOR MÁS PODEROSO
-// ============================================
 
 console.log('--- 8. REDUCE (El Operador Poderoso) ---\n')
 
