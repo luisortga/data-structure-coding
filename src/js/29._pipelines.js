@@ -1,9 +1,5 @@
 // orteg
 
-console.log('═══════════════════════════════════════')
-console.log('  EJEMPLOS DE PIPELINES EN JAVASCRIPT')
-console.log('═══════════════════════════════════════\n')
-
 // 1. PIPELINES BÁSICOS CON FUNCIONES
 
 console.log('--- 1. PIPELINES BÁSICOS ---\n')
