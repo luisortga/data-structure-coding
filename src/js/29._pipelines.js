@@ -1,15 +1,10 @@
-// ============================================
-// EJEMPLOS DE PIPELINES EN JAVASCRIPT/NODE.JS
-// Ejecuta con: node ejemplos-pipelines.js
-// ============================================
+// orteg
 
 console.log('═══════════════════════════════════════')
 console.log('  EJEMPLOS DE PIPELINES EN JAVASCRIPT')
 console.log('═══════════════════════════════════════\n')
 
-// ============================================
 // 1. PIPELINES BÁSICOS CON FUNCIONES
-// ============================================
 
 console.log('--- 1. PIPELINES BÁSICOS ---\n')
 
@@ -38,9 +33,7 @@ const miPipeline = pipe(sumar5, multiplicarPor2, restarEn3)
 const resultado1 = miPipeline(10)
 console.log(`Resultado final: ${resultado1}\n`)
 
-// ============================================
 // 2. PIPELINES CON ARRAYS
-// ============================================
 
 console.log('--- 2. PIPELINES CON ARRAYS ---\n')
 
