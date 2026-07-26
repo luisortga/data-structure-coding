@@ -36,7 +36,7 @@ console.log(solo('luis'))
 
 let finanzas = 500
 
-function touchPad(coste) {
+function touchPad(coste = 100) { // default value: 100
     console.log(`Touch cuesta ${coste}`)
     finanzas -= coste
     return finanzas
