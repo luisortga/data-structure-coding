@@ -33,3 +33,11 @@ function solo(greet) {
 }
 
 console.log(solo('luis'))
+
+let finanzas = 500
+
+function touchPad(coste) {
+    console.log(`Touch cuesta ${coste}`)
+    finanzas -= coste
+    return finanzas
+}
