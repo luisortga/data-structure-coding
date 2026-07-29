@@ -1,4 +1,4 @@
-const fs = require('fs').promises; // Versión con promesas
+const fs = require('fs').promises // Versión con promesas
 
 app.get('/usuario/:id', function(req, res) {
   Promise.all([
@@ -7,9 +7,9 @@ app.get('/usuario/:id', function(req, res) {
     fs.readFile('prefs.json', 'utf8')
   ])
   .then(([usuarios, historial, prefs]) => {
-    res.json({ usuarios, historial, prefs });
+    res.json({ usuarios, historial, prefs })
   })
   .catch(err => {
-    res.status(500).send("Error");
-  });
-});
+    res.status(500).send("Error")
+  })
+})
