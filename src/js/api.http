@@ -51,4 +51,9 @@ Content-Type: application/json
 
 {
   "year": 2027
-}### Intento de desarrollo TRACE
+}
+
+### Intento de desarrollo TRACE
+TRACE http://localhost:1234/
+
+
