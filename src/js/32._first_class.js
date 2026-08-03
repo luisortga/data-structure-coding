@@ -57,10 +57,46 @@ const mifun = function() {
 
 mifun()
 
-setTimeout(function() { console.log(`Despues de 6 seg`) }, 6000)
+// setTimeout(function() { console.log(`Despues de 6 seg`) }, 6000)
+// MacroTask Thrid priority
 
 function unpacking(fn) {
     fn()
 }
 
 unpacking(function() { console.log(`Runner`) })
+
+// Arrow
+
+const mfun3 = (name) => {
+    console.log(`heey ${name}`)
+}
+
+// 2 caracteristicas, arrow con retorno implicito
+
+let multiply = (a, b) => a * b // return implicit - not return
+console.warn(multiply(12, 24))
+
+const namee = 'melissa'
+
+// this léxico
+const handler = {
+    namee: "joseph",
+    greeting: function() {
+        console.log(`Hola, ${this.namee}`)
+    }
+}
+
+// what is this?
+
+/*
+
+this = {
+
+}
+
+object === this
+
+*/
+
+handler.greeting()
