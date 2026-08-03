@@ -84,6 +84,9 @@ const handler = {
     namee: "joseph",
     greeting: function() {
         console.log(`Hola, ${this.namee}`)
+    },
+    arrowGtin: () => {
+        console.log(`Hola, ${this.namee}`)
     }
 }
 
@@ -100,3 +103,10 @@ object === this
 */
 
 handler.greeting()
+handler.arrowGtin(); // undefined: arrow su propio contexto
+
+// IIFE (Expresión de fn inviked inmediatamente) fn entre (fn)
+
+    (function() {
+        console.log('Es verdadero')
+    })()
