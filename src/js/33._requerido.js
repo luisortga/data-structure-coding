@@ -6,6 +6,6 @@ let espera = setTimeout((res) => {
 
 const dataCompany = async () => {
     return new Promise((res) => {
-
+        espera(res)
     })
 }
