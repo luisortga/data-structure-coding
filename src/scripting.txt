@@ -2,3 +2,4 @@
 Escuderia Aston martin
 Escuderia Posrche
 Playright
+pnpm run dev
