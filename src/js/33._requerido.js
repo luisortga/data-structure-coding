@@ -1,7 +1,7 @@
 /* testing from sale developer */
 
 let espera = setTimeout((res) => {
-    res(console.log('Sucessful'))
+    console.log('Sucessful')
 }, 4000)
 
 const dataCompany = async () => {
@@ -9,3 +9,5 @@ const dataCompany = async () => {
         espera(res)
     })
 }
+
+dataCompany()
