@@ -103,10 +103,60 @@ object === this
 */
 
 handler.greeting()
-handler.arrowGtin(); // undefined: arrow su propio contexto
+handler.arrowGtin(); // undefined: arrow su propio contexto, quitar contexto dejar
 
 // IIFE (Expresión de fn inviked inmediatamente) fn entre (fn)
 
     (function() {
         console.log('Es verdadero')
+    })();
+
+    (() => {
+        console.log('new callback')
     })()
+
+    // parametros Rest (...)
+
+    function sum(...numbers) {
+        let result = 0
+        for (let nm of numbers) {
+            result += nm
+        }
+        return result
+    }
+
+    console.log(sum(12, 24, 36)) // [?, ?, ?] ... is array argument
+    console.log(sum(2, 4)) // [?, ?] parametros rest ...
+
+    // Operator Spread (...)
+    // expandir un elemento en un array
+
+    const numbers = [2, 6, 8]
+    function fnSum(a, b, c) {
+        return a+b+c
+    }
+
+    console.log(fnSum(...numbers)) // py : *numbers, unpackage
+
+    // NaN si tiene menos, if less Not a Number
+
+    // Closures (clausuras)
+
+    
+    function createCounter() {
+        let counter = 0
+        return function() {
+            counter++
+            console.log(`Counter: ${counter}`)
+        }
+    }
+
+    const counter = createCounter()
+    counter()
+    counter()
+    counter()
+    counter()
+
+    // Recursividad
+
+    
