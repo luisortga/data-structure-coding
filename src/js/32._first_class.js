@@ -215,3 +215,18 @@ const battle = spidy('jeam grey')
 console.log(battle('punisher'))
 
 console.log(battle(''))
+
+// callbacks
+
+
+
+function processCostumers(client, runnable) { // runnable is callback
+    const result = sum(...data)
+    runnable(result)
+}
+
+function processResult(result) {
+    console.log(result)
+}
+
+processCostumers([12, 24, 36], processResult)
