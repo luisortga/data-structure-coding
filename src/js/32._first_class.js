@@ -171,6 +171,19 @@ handler.arrowGtin(); // undefined: arrow su propio contexto, quitar contexto dej
 
     // funciones parciales
 
-    
+    function partialSum(a) {
+        return function(b, c) {
+            return sum(a, b, c)
+        }
+    }
+
+// a | b | c
+// 24 | number | number
+
+const sumWith = partialSum(24)
+console.log(sumWith(12, 16))
+console.log(sumWith(1, 2))
+
+// Currying
 
     
