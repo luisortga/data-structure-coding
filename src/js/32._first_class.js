@@ -186,4 +186,32 @@ console.log(sumWith(1, 2))
 
 // Currying
 
-    
+function curSum(a) {
+    return function(b) {
+        return function (c) {
+            return sum(a,b,c)
+        }
+    }
+}
+
+const codex = curSum(12)(16)
+console.log(codex(24))
+console.log(codex(8))
+
+function marvel(hro1) {
+    return function(hro2) {
+        return function (hro3) {
+            if (hro3 !== '') {
+                return `${hro1} vs ${hro2} and challenger is ${hro3}`
+            } else {
+                return `${hro1} vs ${hro2}`
+            }
+        }
+    }
+}
+
+const spidy = marvel('spiderman')
+const battle = spidy('jeam grey')
+console.log(battle('punisher'))
+
+console.log(battle(''))
