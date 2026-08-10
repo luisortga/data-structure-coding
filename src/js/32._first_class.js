@@ -230,3 +230,6 @@ function processResult(result) {
 }
 
 processCostumers([12, 24, 36], processResult)
+processCostumers([12, 24, 36], (result) => {
+    console.log(`Mi resultado es la arrow fn es: ${result}`)
+})
