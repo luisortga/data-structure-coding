@@ -22,3 +22,7 @@ let clocking = cars.filter(element => element.length >= 6)
 console.log(clocking)
 
 // reduce : only array number
+
+// Manipulación
+
+// flat : aplanar
