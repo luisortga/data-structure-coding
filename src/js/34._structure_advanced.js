@@ -13,3 +13,12 @@ cars.forEach(element => {
 
 let present = cars.map(element => `car is ${element}` )
 console.log(present)
+
+cars.push('ac cars')
+
+// filter
+
+let clocking = cars.filter(element => element.length >= 6)
+console.log(clocking)
+
+// reduce : only array number
