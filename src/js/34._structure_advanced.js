@@ -8,3 +8,8 @@ console.log('Reino Unido')
 cars.forEach(element => {
     console.log(element)  
 })
+
+// map : mapear una colección
+
+let present = cars.map(element => `car is ${element}` )
+console.log(present)
