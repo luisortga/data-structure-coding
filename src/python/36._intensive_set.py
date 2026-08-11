@@ -20,8 +20,10 @@ def back_sets(*args: int) -> set[int]:
     surf: set[int] = {0}
     for i in range(0, len(args)):
         surf.add(args[i])
-        
+
     return surf
 
 first_set = back_sets(1, 24, 6, 12, 36)
 print(first_set)
+
+# continue ...
