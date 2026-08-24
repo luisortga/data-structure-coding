@@ -68,10 +68,39 @@ async function createPost(url) {
 // createPost('http://localhost:8092/api/v1/cliente')
 
 // Mensajes de error
+/*
 fetch('http://localhost:8092/api/v1/cliente/446')
 	.then(response => {
 		if (!response.ok) throw Error(`Not successful ${response.status}`)
 		return response.json()
 	})
     // .then(data => console.log(data))
-    .catch(err => console.log('Error', err))
+    .catch(err => console.log('Error', err)) */
+
+// https://jsonplaceholder.typicode.com//posts/1
+
+async function partialPostUpdate() {
+    try {
+
+    const newPost = {
+        userId: 1,
+        title: "Imperio Viltrum",
+        body: "regente Thragg"
+    }
+
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts/1", {
+        method: "PATCH", 
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({ title: "Titulo del imperio Viltrumita" })
+    })
+
+    const data = await response.json()
+    console.log(data)
+    } catch (error) {
+        console.log("error", error)
+    }
+}
+
+partialPostUpdate()
