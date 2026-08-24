@@ -34,7 +34,7 @@ async function getPost(url) {
 	} 
 }
 
-getPost('http://localhost:8092/api/v1/cliente/12')
+// getPost('http://localhost:8092/api/v1/cliente/12')
 
 // Solicitud post
 
@@ -66,3 +66,12 @@ async function createPost(url) {
 }
 
 // createPost('http://localhost:8092/api/v1/cliente')
+
+// Mensajes de error
+fetch('http://localhost:8092/api/v1/cliente/446')
+	.then(response => {
+		if (!response.ok) throw Error(`Not successful ${response.status}`)
+		return response.json()
+	})
+    // .then(data => console.log(data))
+    .catch(err => console.log('Error', err))
